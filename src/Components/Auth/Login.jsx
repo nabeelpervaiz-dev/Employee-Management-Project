@@ -1,14 +1,16 @@
 import React, { useState } from 'react'
 
-const Login = () => {
-
-
+const Login = ({LoginHandle}) => {
+  
   const [email, setemail] = useState('')
   const [password, setpassword] = useState('')
 
   const submithandle=(e)=>{
 e.preventDefault();
+LoginHandle(email,password)
 console.log("form submited"+ email + password)
+setemail('');
+setpassword('')
   }
 
 
@@ -36,6 +38,7 @@ console.log("form submited"+ email + password)
               value={email}
                onChange={(e)=>{
                setemail(e.target.value)
+               //value is set to the usestate email
                }}
               type="email"
               placeholder="Enter your email"
@@ -52,6 +55,7 @@ console.log("form submited"+ email + password)
             value={password}
                onChange={(e)=>{
                setpassword(e.target.value)
+               /// value is set to the usestate password
                }}
               type="password"
               placeholder="Enter your password"
