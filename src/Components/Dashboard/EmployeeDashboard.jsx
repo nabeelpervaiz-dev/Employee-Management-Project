@@ -3,10 +3,10 @@ import Nav from './EmployeDashboardComponents/Nav'
 import TaskCounts from './EmployeDashboardComponents/TaskCounts'
 import TaskDetailsCard from './EmployeDashboardComponents/TaskDetailsCard'
 
-const EmployeeDashboard = () => {
+const EmployeeDashboard = (props) => {
   return (
     <div className='bg-white'>
-        <Nav/>
+        <Nav info={props.info}/>
         <TaskCounts/>
         <TaskDetailsCard/>
     </div>

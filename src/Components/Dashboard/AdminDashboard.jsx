@@ -3,10 +3,10 @@ import Nav from './EmployeDashboardComponents/Nav'
 import TaskCreationForm from './AdminComponents/TaskCreationForm'
 import AlLCreatedTasks from './AdminComponents/AlLCreatedTasks'
 
-const AdminDashboard = () => {
+const AdminDashboard = (props) => {
   return (
     <div>
-        <Nav/>
+        <Nav info={props.info}/>
         <TaskCreationForm/>
     </div>
   )

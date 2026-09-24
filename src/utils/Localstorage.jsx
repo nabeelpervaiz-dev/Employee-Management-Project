@@ -3,6 +3,8 @@ import { jsxs } from "react/jsx-runtime";
 const employee=[
   {
     "id": 1,
+    "name":"Rechal Qaiser",
+    "name":"rechal@me.com",
     "email": "nabeel@me.com",
     "password": "123",
     "tasks": [
@@ -50,7 +52,8 @@ const employee=[
   },
   {
     "id": 2,
-    "email": "ahmed@me.com",
+    "Name":"Qaiser Masih",
+    "email": "qaiser@me.com",
     "password": "123",
     "tasks": [
       {
@@ -87,7 +90,8 @@ const employee=[
   },
   {
     "id": 3,
-    "email": "usman@me.com",
+    "name":"Shanzay Qaiser",
+    "email": "shanzay@me.com",
     "password": "123",
     "tasks": [
       {
@@ -144,7 +148,8 @@ const employee=[
   },
   {
     "id": 4,
-    "email": "hamza@me.com",
+    "name":"Zoya Javed",
+    "email": "zoya@me.com",
     "password": "123",
     "tasks": [
       {
@@ -211,7 +216,8 @@ const employee=[
   },
   {
     "id": 5,
-    "email": "bilal@me.com",
+    "name":"Diya Javed",
+    "email": "diya@me.com",
     "password": "123",
     "tasks": [
       {
@@ -271,7 +277,15 @@ const employee=[
 const admin=[
   {
     "id": 1,
-    "email": "admin@me.com",
+
+    "email": "admin1@me.com",
+    "password": "123",
+    "role": "admin"
+  },
+   {
+    "id": 2,
+
+    "email": "admin2@me.com",
     "password": "123",
     "role": "admin"
   }
@@ -286,6 +300,8 @@ export const GetData=()=>{
  const employee =JSON.parse(localStorage.getItem('Employee'));
  const admin=JSON.parse(localStorage.getItem('Admin'));
 
+
+ return {employee , admin}
  console.log(employee,admin);
 
 }
