@@ -4,8 +4,7 @@ const employee=[
   {
     "id": 1,
     "name":"Rechal Qaiser",
-    "name":"rechal@me.com",
-    "email": "nabeel@me.com",
+    "email": "rechal@me.com",
     "password": "123",
     "tasks": [
       {
@@ -52,7 +51,7 @@ const employee=[
   },
   {
     "id": 2,
-    "Name":"Qaiser Masih",
+    "name":"Qaiser Masih",
     "email": "qaiser@me.com",
     "password": "123",
     "tasks": [
@@ -277,14 +276,14 @@ const employee=[
 const admin=[
   {
     "id": 1,
-
+     "name":"Nabeel Pervaiz",
     "email": "admin1@me.com",
     "password": "123",
     "role": "admin"
   },
    {
     "id": 2,
-
+    "name":"Nabeel Fronted Developer",
     "email": "admin2@me.com",
     "password": "123",
     "role": "admin"

@@ -6,8 +6,8 @@ import AlLCreatedTasks from './AdminComponents/AlLCreatedTasks'
 const AdminDashboard = (props) => {
   return (
     <div>
-        <Nav info={props.info}/>
-        <TaskCreationForm/>
+        <Nav info={props.info} data={props.data} />
+        <TaskCreationForm  />
     </div>
   )
 }

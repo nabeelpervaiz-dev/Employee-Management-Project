@@ -15,9 +15,9 @@ setpassword('')
 
 
   return (
-    <div className="min-h-screen bg-[#e9e9e6] flex items-center justify-center">
+    <div className="min-h-screen bg-[#f0eded] flex items-center justify-center ">
 
-      <div className="w-full max-w-md bg-[#f5f5f1] p-10 rounded-3xl">
+      <div className="w-full max-w-md bg-[#f5f5f1] p-10 rounded-3xl shadow-2xl">
 
         <h1 className="text-5xl font-semibold  tracking-tight mb-8">
           Login
@@ -63,7 +63,7 @@ setpassword('')
             />
           </div>
 
-          <button type='submit' className="w-full h-14 active:scale-95 rounded-2xl bg-black text-white mt-6 font-bold">
+          <button type='submit' className="w-full cursor-pointer h-14 active:scale-95 rounded-2xl bg-black text-white mt-6 font-bold">
             Login
           </button>
           </form>
