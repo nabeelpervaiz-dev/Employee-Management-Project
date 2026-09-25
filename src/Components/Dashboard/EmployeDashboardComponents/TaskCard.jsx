@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TaskCard = () => {
+const TaskCard = (props) => {
   return (
    <div
   className="
@@ -23,19 +23,18 @@ const TaskCard = () => {
     </span>
 
     <span className="text-sm sm:text-base text-gray-500 whitespace-nowrap">
-      23 Sep 2026
+    {props.date}
     </span>
   </div>
 
   {/* Title */}
   <h2 className="text-xl sm:text-2xl font-bold mt-7">
-    Complete React Project
+    {props.title}
   </h2>
 
   {/* Description */}
   <p className="text-sm sm:text-base text-gray-500 mt-2 leading-snug">
-    Build the task management interface using React and
-    Tailwind CSS and make it fully responsive.
+    {props.discription}
   </p>
 
 </div>

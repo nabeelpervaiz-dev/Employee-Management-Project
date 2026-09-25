@@ -8,8 +8,8 @@ const EmployeeDashboard = (props) => {
   return (
     <div className='bg-white'>
         <Nav info={props.info} data={props.data} />
-        <TaskCounts />
-        <TaskDetailsCard />
+        <TaskCounts data={props.data} />
+        <TaskDetailsCard data={props.data} />
     </div>
   )
 }

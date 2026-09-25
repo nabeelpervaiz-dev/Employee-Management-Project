@@ -6,6 +6,12 @@ const employee=[
     "name":"Rechal Qaiser",
     "email": "rechal@me.com",
     "password": "123",
+    taskCounts: {
+      active: 2,
+      newTask: 1,
+      completed: 1,
+      failed: 1
+    },
     "tasks": [
       {
         "active": true,
@@ -54,6 +60,12 @@ const employee=[
     "name":"Qaiser Masih",
     "email": "qaiser@me.com",
     "password": "123",
+    taskCounts: {
+      active: 2,
+      newTask: 1,
+      completed: 1,
+      failed: 0
+    },
     "tasks": [
       {
         "active": true,
@@ -92,6 +104,12 @@ const employee=[
     "name":"Shanzay Qaiser",
     "email": "shanzay@me.com",
     "password": "123",
+    taskCounts: {
+      active: 3,
+      newTask: 2,
+      completed: 1,
+      failed: 1
+    },
     "tasks": [
       {
         "active": true,
@@ -150,6 +168,12 @@ const employee=[
     "name":"Zoya Javed",
     "email": "zoya@me.com",
     "password": "123",
+    taskCounts: {
+      active: 3,
+      newTask: 1,
+      completed: 2,
+      failed: 1
+    },
     "tasks": [
       {
         "active": true,
@@ -218,6 +242,12 @@ const employee=[
     "name":"Diya Javed",
     "email": "diya@me.com",
     "password": "123",
+    taskCounts: {
+      active: 3,
+      newTask: 2,
+      completed: 1,
+      failed: 1
+    },
     "tasks": [
       {
         "active": true,

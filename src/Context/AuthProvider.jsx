@@ -1,15 +1,19 @@
-import React, { createContext } from 'react'
-import { GetData } from '../utils/Localstorage'
+import React, { createContext, useEffect } from 'react'
+import { GetData, SetData } from '../utils/Localstorage'
 
 
 // Step no.01 :Creating context
 export const AuthContext=createContext()
 
-   const data=GetData()
+
+  const data=GetData()
+
 
  const AuthProvider = ({children}) => {
     //Auth Creation
-
+useEffect(() => {
+  SetData()
+}, [])
   
     
   return (

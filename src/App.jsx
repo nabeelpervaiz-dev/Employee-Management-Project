@@ -15,7 +15,17 @@ function App() {
   const [LoggedInUser, SetLoggedInUser] = useState(null)
 ///  3 - we are using useContext to use the data that is set as a value in context.provider
 
-   const AuthData= useContext(AuthContext)
+// useEffect(() => {
+//   // basicall try to get the user from the local storage so that when the page is reload it automatically 
+//   // set the user to Employee ot Admin base on role store in localStorage...
+// const Logged_Status=JSON.parse(localStorage.getItem('LoggedInUser'))
+// if(Logged_Status){
+//   setUser(Logged_Status.role)
+// }
+// }, [])
+
+   const AuthData = useContext(AuthContext)
+   console.log(AuthData)
    const EmployeeData=AuthData.employee;
   const AdminData=AuthData.admin;
 // destructuring {employee, admin}=useContext(AuthContext) but  know were not using
@@ -24,7 +34,7 @@ function App() {
 console.log(AdminData)
 console.log(EmployeeData)
 
- 
+
 
 
   const LoginHandle=(email, password)=>{
